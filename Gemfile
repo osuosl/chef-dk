@@ -110,6 +110,18 @@ group(:omnibus_package) do
   gem "winrm-elevated"
   gem "cucumber"
   gem "stove"
+
+  # OSUOSL gems
+  gem "acme-client"
+  gem "chef-handler-mail"
+  gem "deep_merge"
+  gem "faraday-http-cache"
+  gem "htauth"
+  gem "kitchen-openstack"
+  gem "kitchen-sync"
+  gem "kitchen-terraform"
+  gem "knife-file"
+  gem "netaddr", "< 2.0.0"
 end
 
 # Everything except AIX
