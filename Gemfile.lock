@@ -311,7 +311,7 @@ GEM
       faraday (~> 0.8)
     faraday_middleware (0.12.2)
       faraday (>= 0.7.4, < 1.0)
-    fauxhai (6.11.0)
+    fauxhai (7.3.0)
       net-ssh
     ffi (1.11.1)
     ffi (1.11.1-x64-mingw32)
@@ -932,7 +932,7 @@ DEPENDENCIES
   dep-selector-libgecode
   dep_selector (>= 1.0.0)
   faraday-http-cache
-  fauxhai (~> 6.11)
+  fauxhai (~> 7.0)
   ffi-libarchive (>= 0.4.0)
   ffi-rzmq-core
   foodcritic (< 16)
