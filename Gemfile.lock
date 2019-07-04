@@ -33,13 +33,13 @@ GEM
     artifactory (3.0.0)
     ast (2.4.0)
     aws-eventstream (1.0.3)
-    aws-sdk (2.11.307)
-      aws-sdk-resources (= 2.11.307)
-    aws-sdk-core (2.11.307)
+    aws-sdk (2.11.309)
+      aws-sdk-resources (= 2.11.309)
+    aws-sdk-core (2.11.309)
       aws-sigv4 (~> 1.0)
       jmespath (~> 1.0)
-    aws-sdk-resources (2.11.307)
-      aws-sdk-core (= 2.11.307)
+    aws-sdk-resources (2.11.309)
+      aws-sdk-core (= 2.11.309)
     aws-sigv4 (1.1.0)
       aws-eventstream (~> 1.0, >= 1.0.2)
     axiom-types (0.1.1)
@@ -347,8 +347,8 @@ GEM
     fog-json (1.2.0)
       fog-core
       multi_json (~> 1.10)
-    fog-openstack (0.3.10)
-      fog-core (>= 1.45, <= 2.1.0)
+    fog-openstack (0.2.4)
+      fog-core (~> 1.45.0)
       fog-json (>= 1.0)
       ipaddress (>= 0.8)
     fog-rackspace (0.1.6)
@@ -749,7 +749,7 @@ GEM
     solve (4.0.2)
       molinillo (~> 0.6)
       semverse (>= 1.1, < 4.0)
-    specinfra (2.78.0)
+    specinfra (2.78.1)
       net-scp
       net-ssh (>= 2.7)
       net-telnet (= 0.1.1)
@@ -935,6 +935,7 @@ DEPENDENCIES
   fauxhai (~> 7.0)
   ffi-libarchive (>= 0.4.0)
   ffi-rzmq-core
+  fog-openstack (< 0.3.0)
   foodcritic (< 16)
   guard
   htauth
