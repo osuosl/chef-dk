@@ -116,7 +116,7 @@ group(:omnibus_package) do
   gem "chef-handler-mail"
   gem "deep_merge"
   gem "faraday-http-cache"
-  gem "fog-openstack", "< 0.3.0"
+  gem "fog-openstack", "< 0.2.0"
   gem "htauth"
   gem "kitchen-openstack"
   gem "kitchen-sync"
