@@ -50,7 +50,7 @@ group(:omnibus_package) do
   gem "chef", "= 13.12.14"
   gem "cheffish", ">= 13.1.0"
   gem "chefspec", ">= 7.1.0", "< 7.3.0"
-  gem "fauxhai", "~> 5.4"
+  gem "fauxhai", "~> 7.3"
   gem "inspec", "~> 1.42"
   gem "kitchen-ec2", ">= 1.3.2"
   gem "kitchen-digitalocean", ">= 0.9.8"
@@ -91,6 +91,19 @@ group(:omnibus_package) do
   gem "winrm-elevated"
   gem "cucumber"
   gem "stove"
+
+  # OSUOSL gems
+  gem "acme-client"
+  gem "chef-handler-mail"
+  gem "deep_merge"
+  gem "faraday-http-cache"
+  gem "fog-openstack", "< 0.2.0"
+  gem "htauth"
+  gem "kitchen-openstack"
+  gem "kitchen-sync"
+  gem "kitchen-terraform"
+  gem "knife-file"
+  gem "netaddr", "< 2.0.0"
 end
 
 # Everything except AIX
