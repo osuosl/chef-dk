@@ -94,20 +94,22 @@ group(:omnibus_package) do
 
   # OSUOSL gems
   gem "acme-client"
+  gem "aruba", "< 0.11"
+  gem "celluloid-io", "< 0.16.2"
   gem "chef-handler-mail"
+  gem "chef-provisioning-ssh"
+  gem "chef-rewind"
+  gem "cookbook-omnifetch", "< 0.6.0"
   gem "deep_merge"
   gem "faraday-http-cache"
   gem "fog-openstack", "< 0.2.0"
+  gem "google-api-client", "< 0.10.0"
   gem "htauth"
   gem "kitchen-openstack"
   gem "kitchen-sync"
   gem "kitchen-terraform"
   gem "knife-file"
   gem "netaddr", "< 2.0.0"
-  gem "google-api-client", "< 0.10.0"
-  gem "celluloid-io", "< 0.16.2"
-  gem "aruba", "< 0.11"
-  gem "cookbook-omnifetch", "< 0.6.0"
 end
 
 # Everything except AIX

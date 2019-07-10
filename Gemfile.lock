@@ -194,6 +194,9 @@ GEM
       fog-xenserver
       retryable
       winrm-elevated
+    chef-provisioning-ssh (0.1.0)
+      chef-provisioning (>= 1.0, < 3.0)
+    chef-rewind (0.0.9)
     chef-sugar (5.0.0)
     chef-vault (3.4.3)
     chef-zero (13.1.0)
@@ -784,6 +787,8 @@ DEPENDENCIES
   chef-provisioning (>= 2.4.0)
   chef-provisioning-aws (>= 3.0.0)
   chef-provisioning-fog (>= 0.26.0)
+  chef-provisioning-ssh
+  chef-rewind
   chef-sugar
   chef-vault (>= 3.3.0)
   cheffish (>= 13.1.0)
