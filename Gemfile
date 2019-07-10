@@ -55,13 +55,13 @@ group(:omnibus_package) do
   gem "kitchen-ec2", ">= 1.3.2"
   gem "kitchen-digitalocean", ">= 0.9.8"
   gem "kitchen-dokken", ">= 2.5.0"
-  gem "kitchen-google", ">= 1.4.0"
+  gem "kitchen-google", "< 2.0.1"
   gem "kitchen-hyperv", ">= 0.5.1"
   gem "kitchen-inspec", ">= 0.19.0"
   gem "kitchen-vagrant", ">= 1.3.0"
   gem "knife-ec2", ">= 0.15.0"
-  gem "knife-google", ">= 3.2.0"
-  gem "knife-windows", ">= 1.9.0"
+  gem "knife-google", "= 3.2.0"
+  gem "knife-windows", "<= 3.0.2"
   gem "knife-opc", ">= 0.3.2"
   gem "ohai", "~> 13.1"
   # net-ssh 4.2.0 explodes the world. FIXME
@@ -104,6 +104,10 @@ group(:omnibus_package) do
   gem "kitchen-terraform"
   gem "knife-file"
   gem "netaddr", "< 2.0.0"
+  gem "google-api-client", "= 0.9.0"
+  gem "celluloid-io", "< 0.16.2"
+  gem "aruba", "< 0.11"
+  gem "cookbook-omnifetch", "< 0.6.0"
 end
 
 # Everything except AIX
