@@ -104,7 +104,7 @@ group(:omnibus_package) do
   gem "kitchen-terraform"
   gem "knife-file"
   gem "netaddr", "< 2.0.0"
-  gem "google-api-client", "= 0.9.0"
+  gem "google-api-client", "< 0.10.0"
   gem "celluloid-io", "< 0.16.2"
   gem "aruba", "< 0.11"
   gem "cookbook-omnifetch", "< 0.6.0"
