@@ -271,7 +271,7 @@ GEM
       multipart-post (>= 1.2, < 3)
     faraday-http-cache (2.0.0)
       faraday (~> 0.8)
-    fauxhai (7.3.0)
+    fauxhai (7.4.0)
       net-ssh
     ffi (1.11.1)
     ffi (1.11.1-x64-mingw32)
