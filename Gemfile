@@ -107,7 +107,7 @@ group(:omnibus_package) do
   gem "htauth"
   gem "kitchen-openstack"
   gem "kitchen-sync"
-  gem "kitchen-terraform"
+  gem "kitchen-terraform", "~> 3.3.1"
   gem "knife-file"
   gem "netaddr", "< 2.0.0"
 end
