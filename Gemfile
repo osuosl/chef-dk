@@ -110,6 +110,7 @@ group(:omnibus_package) do
   gem "kitchen-terraform", "~> 3.3.1"
   gem "knife-file"
   gem "netaddr", "< 2.0.0"
+  gem "toml"
 end
 
 # Everything except AIX

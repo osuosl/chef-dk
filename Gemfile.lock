@@ -725,6 +725,8 @@ GEM
     thread_safe (0.3.6)
     timers (4.0.4)
       hitimes
+    toml (0.2.0)
+      parslet (~> 1.8.0)
     tomlrb (1.2.8)
     train (0.32.0)
       docker-api (~> 1.26)
@@ -881,6 +883,7 @@ DEPENDENCIES
   ruby-shadow
   stove
   test-kitchen (~> 1.22.0)
+  toml
   win32-api
   win32-dir
   win32-event
