@@ -19,7 +19,7 @@ source "https://rubygems.org"
 
 gemspec
 
-gem "bundler", "= 1.17.3"
+gem "bundler"
 
 group(:omnibus_package, :development, :test) do
   # we pin these gems as they are installed in the ruby source and if we let them
