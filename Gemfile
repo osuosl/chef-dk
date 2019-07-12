@@ -60,8 +60,8 @@ group(:omnibus_package) do
   gem "chef", "= 14.13.11"
   gem "cheffish", ">= 14.0.1"
   gem "chefspec", "< 7.3.0"
-  gem "fauxhai", "~> 7.0" # bump this on the next DK major release
-  gem "inspec", "~> 3.9"
+  gem "fauxhai", "~> 7.4" # bump this on the next DK major release
+  gem "inspec", "< 4.0"
   gem "kitchen-azurerm", ">= 0.14"
   gem "kitchen-ec2", ">= 2.3", "< 3.0"
   gem "kitchen-digitalocean", ">= 0.10.0"
@@ -71,10 +71,10 @@ group(:omnibus_package) do
   gem "kitchen-inspec", ">= 1.0"
   gem "kitchen-vagrant", ">= 1.4"
   gem "knife-acl", ">= 1.0.3"
-  gem "knife-ec2", ">= 0.19.10"
+  gem "knife-ec2", "< 1.0"
   gem "knife-google", ">= 3.3.3"
   gem "knife-tidy", ">= 1.2.0"
-  gem "knife-windows", ">= 1.9.1"
+  gem "knife-windows", "<= 3.0.2"
   gem "knife-opc", ">= 0.4.0"
   gem "knife-vsphere", ">= 2.1.1"
   gem "mixlib-archive", ">= 0.4.16"
@@ -120,9 +120,10 @@ group(:omnibus_package) do
   gem "htauth"
   gem "kitchen-openstack"
   gem "kitchen-sync"
-  gem "kitchen-terraform"
+  gem "kitchen-terraform", "> 3.0"
   gem "knife-file"
   gem "netaddr", "< 2.0.0"
+  gem "toml"
 end
 
 # Everything except AIX
