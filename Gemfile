@@ -99,7 +99,6 @@ group(:omnibus_package) do
   gem "chef-handler-mail"
   gem "chef-provisioning-ssh"
   gem "chef-rewind"
-  gem "cookbook-omnifetch", "< 0.6.0"
   gem "deep_merge"
   gem "faraday-http-cache"
   gem "fog-openstack", "< 0.2.0"
