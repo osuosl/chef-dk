@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    chef-dk (3.11.6)
+    chef-dk (3.11.6.1)
       addressable (>= 2.3.5, < 2.6)
       chef (~> 14.0)
       chef-provisioning (~> 2.0)
@@ -626,7 +626,7 @@ GEM
       shellany (~> 0.0)
     octokit (4.14.0)
       sawyer (~> 0.8.0, >= 0.5.3)
-    ohai (14.8.12)
+    ohai (14.14.0)
       chef-config (>= 12.8, < 15)
       ffi (~> 1.9)
       ffi-yajl (~> 2.2)
@@ -734,7 +734,7 @@ GEM
       addressable (>= 2.3.5)
       faraday (> 0.8, < 2.0)
     semverse (3.0.0)
-    serverspec (2.41.4)
+    serverspec (2.41.5)
       multi_json
       rspec (~> 3.0)
       rspec-its
@@ -750,7 +750,7 @@ GEM
     solve (4.0.2)
       molinillo (~> 0.6)
       semverse (>= 1.1, < 4.0)
-    specinfra (2.78.2)
+    specinfra (2.81.0)
       net-scp
       net-ssh (>= 2.7)
       net-telnet (= 0.1.1)
