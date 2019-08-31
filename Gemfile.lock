@@ -16,6 +16,7 @@ PATH
 
 GEM
   remote: https://rubygems.org/
+  remote: https://packagecloud.io/osuosl/inspec/
   specs:
     acme-client (2.0.3)
       faraday (~> 0.9, >= 0.9.1)
@@ -33,13 +34,13 @@ GEM
     artifactory (3.0.0)
     ast (2.4.0)
     aws-eventstream (1.0.3)
-    aws-sdk (2.11.314)
-      aws-sdk-resources (= 2.11.314)
-    aws-sdk-core (2.11.314)
+    aws-sdk (2.11.345)
+      aws-sdk-resources (= 2.11.345)
+    aws-sdk-core (2.11.345)
       aws-sigv4 (~> 1.0)
       jmespath (~> 1.0)
-    aws-sdk-resources (2.11.314)
-      aws-sdk-core (= 2.11.314)
+    aws-sdk-resources (2.11.345)
+      aws-sdk-core (= 2.11.345)
     aws-sigv4 (1.1.0)
       aws-eventstream (~> 1.0, >= 1.0.2)
     axiom-types (0.1.1)
@@ -301,7 +302,7 @@ GEM
     equalizer (0.0.11)
     equatable (0.5.0)
     erubis (2.7.0)
-    excon (0.64.0)
+    excon (0.66.0)
     faraday (0.15.4)
       multipart-post (>= 1.2, < 3)
     faraday-cookie_jar (0.0.6)
@@ -430,7 +431,7 @@ GEM
     ice_nine (0.11.2)
     inifile (3.0.0)
     iniparse (1.4.4)
-    inspec (3.9.3)
+    inspec (3.9.7)
       addressable (~> 2.4)
       faraday (>= 0.9.0)
       faraday_middleware (~> 0.12.2)
@@ -759,7 +760,7 @@ GEM
     stove (7.1.0)
       chef-api (~> 0.5)
       logify (~> 0.2)
-    strings (0.1.5)
+    strings (0.1.6)
       strings-ansi (~> 0.1)
       unicode-display_width (~> 1.5)
       unicode_utils (~> 1.4)
@@ -784,7 +785,7 @@ GEM
     thread_safe (0.3.6)
     timeliness (0.3.10)
     timers (4.3.0)
-    tins (1.21.0)
+    tins (1.21.1)
     toml (0.2.0)
       parslet (~> 1.8.0)
     toml-rb (1.1.2)
@@ -805,8 +806,7 @@ GEM
       net-ssh (>= 2.9, < 6.0)
       winrm (~> 2.0)
       winrm-fs (~> 1.0)
-    train-habitat (0.1.1)
-      train (>= 1.7.5, < 3.0)
+    train-habitat (0.2.11)
     treetop (1.6.10)
       polyglot (~> 0.3)
     trollop (2.9.9)
@@ -941,7 +941,7 @@ DEPENDENCIES
   foodcritic (< 16)
   guard
   htauth
-  inspec (< 4.0)
+  inspec (= 3.9.7)!
   kitchen-azurerm (>= 0.14)
   kitchen-digitalocean (>= 0.10.0)
   kitchen-dokken (>= 2.6.7)
