@@ -80,7 +80,7 @@ group(:omnibus_package) do
   gem "mixlib-archive", ">= 0.4.16"
   gem "ohai", "~> 14.0"
   gem "net-ssh", ">= 4.2.0"
-  gem "test-kitchen", ">= 1.23.0", "< 2"
+  gem "test-kitchen", ">= 1.23.0", "< 3"
   gem "listen"
   gem "dco"
 
