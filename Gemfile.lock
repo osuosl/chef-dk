@@ -34,13 +34,13 @@ GEM
     artifactory (3.0.0)
     ast (2.4.0)
     aws-eventstream (1.0.3)
-    aws-sdk (2.11.345)
-      aws-sdk-resources (= 2.11.345)
-    aws-sdk-core (2.11.345)
+    aws-sdk (2.11.346)
+      aws-sdk-resources (= 2.11.346)
+    aws-sdk-core (2.11.346)
       aws-sigv4 (~> 1.0)
       jmespath (~> 1.0)
-    aws-sdk-resources (2.11.345)
-      aws-sdk-core (= 2.11.345)
+    aws-sdk-resources (2.11.346)
+      aws-sdk-core (= 2.11.346)
     aws-sigv4 (1.1.0)
       aws-eventstream (~> 1.0, >= 1.0.2)
     axiom-types (0.1.1)
@@ -431,7 +431,7 @@ GEM
     ice_nine (0.11.2)
     inifile (3.0.0)
     iniparse (1.4.4)
-    inspec (3.9.7)
+    inspec (3.9.7.1)
       addressable (~> 2.4)
       faraday (>= 0.9.0)
       faraday_middleware (~> 0.12.2)
@@ -941,7 +941,7 @@ DEPENDENCIES
   foodcritic (< 16)
   guard
   htauth
-  inspec (= 3.9.7)!
+  inspec (= 3.9.7.1)!
   kitchen-azurerm (>= 0.14)
   kitchen-digitalocean (>= 0.10.0)
   kitchen-dokken (>= 2.6.7)
