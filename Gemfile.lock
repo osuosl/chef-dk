@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    chef-dk (2.6.3.2)
+    chef-dk (2.6.3.3)
       addressable (>= 2.3.5, < 2.6)
       chef (~> 13.0)
       chef-provisioning (~> 2.0)
@@ -522,7 +522,7 @@ GEM
     mime-types-data (3.2019.0331)
     mini_mime (1.0.2)
     mini_portile2 (2.4.0)
-    minitar (0.8)
+    minitar (0.9)
     minitest (5.11.3)
     mixlib-archive (0.4.20)
       mixlib-log
@@ -532,7 +532,7 @@ GEM
     mixlib-cli (1.7.0)
     mixlib-config (2.2.18)
       tomlrb
-    mixlib-install (3.11.18)
+    mixlib-install (3.11.21)
       mixlib-shellout
       mixlib-versioning
       thor
