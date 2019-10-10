@@ -16,6 +16,7 @@ PATH
 
 GEM
   remote: https://rubygems.org/
+  remote: https://packagecloud.io/osuosl/chefspec/
   remote: https://packagecloud.io/osuosl/inspec/
   specs:
     acme-client (2.0.3)
@@ -209,9 +210,9 @@ GEM
     cheffish (13.1.0)
       chef-zero (~> 13.0)
       net-ssh
-    chefspec (7.2.1)
+    chefspec (7.2.1.0)
       chef (>= 12.14.89)
-      fauxhai (>= 4)
+      fauxhai-ng (>= 4)
       rspec (~> 3.0)
     chefstyle (0.6.0)
       rubocop (= 0.49.1)
@@ -300,7 +301,7 @@ GEM
       multipart-post (>= 1.2, < 3)
     faraday-http-cache (2.0.0)
       faraday (~> 0.8)
-    fauxhai (7.4.0)
+    fauxhai-ng (7.5.0)
       net-ssh
     ffi (1.11.1)
     ffi (1.11.1-x64-mingw32)
@@ -701,7 +702,7 @@ GEM
     solve (4.0.2)
       molinillo (~> 0.6)
       semverse (>= 1.1, < 4.0)
-    specinfra (2.81.0)
+    specinfra (2.82.2)
       net-scp
       net-ssh (>= 2.7)
       net-telnet (= 0.1.1)
@@ -824,7 +825,7 @@ DEPENDENCIES
   chef-sugar
   chef-vault (>= 3.3.0)
   cheffish (>= 13.1.0)
-  chefspec (>= 7.1.0, < 7.3.0)
+  chefspec (>= 7.1.0, < 7.3.0)!
   chefstyle
   cookstyle (~> 2.0)
   cucumber
@@ -833,7 +834,7 @@ DEPENDENCIES
   dep-selector-libgecode
   dep_selector
   faraday-http-cache
-  fauxhai (~> 7.3)
+  fauxhai-ng (~> 7.5)
   ffi
   ffi-rzmq-core
   fog-openstack (< 0.2.0)
