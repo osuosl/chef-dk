@@ -18,6 +18,7 @@ GEM
   remote: https://rubygems.org/
   remote: https://packagecloud.io/osuosl/chefspec/
   remote: https://packagecloud.io/osuosl/inspec/
+  remote: https://packagecloud.io/osuosl/knife-file/
   specs:
     acme-client (2.0.3)
       faraday (~> 0.9, >= 0.9.1)
@@ -854,7 +855,7 @@ DEPENDENCIES
   kitchen-terraform (~> 3.3.1)
   kitchen-vagrant (>= 1.3.0)
   knife-ec2 (>= 0.15.0)
-  knife-file
+  knife-file!
   knife-google (= 3.2.0)
   knife-opc (>= 0.3.2)
   knife-push
