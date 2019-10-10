@@ -59,8 +59,8 @@ group(:omnibus_package) do
   # fixes.
   gem "chef", "= 14.13.11"
   gem "cheffish", ">= 14.0.1"
-  gem "chefspec", "< 7.3.0"
-  gem "fauxhai", "~> 7.4" # bump this on the next DK major release
+  gem "chefspec", "< 7.3.0", source: "https://packagecloud.io/osuosl/chefspec"
+  gem "fauxhai-ng", "~> 7.5" # bump this on the next DK major release
   gem "inspec", "= 3.9.7.1", source: "https://packagecloud.io/osuosl/inspec"
   gem "kitchen-azurerm", ">= 0.14"
   gem "kitchen-ec2", ">= 2.3", "< 3.0"
