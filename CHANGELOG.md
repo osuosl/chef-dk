@@ -1,21 +1,54 @@
 <!-- usage documentation: http://expeditor-docs.es.chef.io/configuration/changelog/ -->
-<!-- latest_release 3.11.6 -->
-## [v3.11.6](https://github.com/chef/chef-dk/tree/v3.11.6) (2019-08-22)
+<!-- latest_release 3.12.15 -->
+## [v3.12.15](https://github.com/chef/chef-dk/tree/v3.12.15) (2019-11-18)
 
 #### Merged Pull Requests
-- Fix the build arguments in the Dockerfile [#2229](https://github.com/chef/chef-dk/pull/2229) ([tduffield](https://github.com/tduffield))
+- Bump omnibus from `f0e30ed` to `97490bb` in /omnibus [#2415](https://github.com/chef/chef-dk/pull/2415) ([dependabot-preview[bot]](https://github.com/dependabot-preview[bot]))
 <!-- latest_release -->
 
-<!-- release_rollup since=3.11.3 -->
-### Changes since 3.11.3 release
+<!-- release_rollup since=3.12.10 -->
+### Changes not yet released to stable
 
 #### Merged Pull Requests
-- Fix the build arguments in the Dockerfile [#2229](https://github.com/chef/chef-dk/pull/2229) ([tduffield](https://github.com/tduffield)) <!-- 3.11.6 -->
-- Update mixlib-archive, mixlib-cli, chefspec, and rspec [#2154](https://github.com/chef/chef-dk/pull/2154) ([tas50](https://github.com/tas50)) <!-- 3.11.5 -->
-- Update Ruby in the hab plan to 2.5.5 [#2118](https://github.com/chef/chef-dk/pull/2118) ([tas50](https://github.com/tas50)) <!-- 3.11.4 -->
+- Bump omnibus from `f0e30ed` to `97490bb` in /omnibus [#2415](https://github.com/chef/chef-dk/pull/2415) ([dependabot-preview[bot]](https://github.com/dependabot-preview[bot])) <!-- 3.12.15 -->
+- Bump mixlib-config from 3.0.1 to 3.0.5 in /omnibus [#2416](https://github.com/chef/chef-dk/pull/2416) ([dependabot-preview[bot]](https://github.com/dependabot-preview[bot])) <!-- 3.12.14 -->
+- Fix habitat builds by using the DK4 plan [#2402](https://github.com/chef/chef-dk/pull/2402) ([tas50](https://github.com/tas50)) <!-- 3.12.13 -->
+- Bump omnibus-software from `3f47c11` to `53ab416` in /omnibus [#2400](https://github.com/chef/chef-dk/pull/2400) ([dependabot-preview[bot]](https://github.com/dependabot-preview[bot])) <!-- 3.12.12 -->
+- Bump omnibus from `e18e22b` to `f0e30ed` in /omnibus [#2391](https://github.com/chef/chef-dk/pull/2391) ([dependabot-preview[bot]](https://github.com/dependabot-preview[bot])) <!-- 3.12.11 -->
 <!-- release_rollup -->
 
 <!-- latest_stable_release -->
+## [v3.12.10](https://github.com/chef/chef-dk/tree/v3.12.10) (2019-11-06)
+
+#### Merged Pull Requests
+- Bump omnibus-software from `3d99fdf` to `39acd5f` in /omnibus [#2316](https://github.com/chef/chef-dk/pull/2316) ([dependabot-preview[bot]](https://github.com/dependabot-preview[bot]))
+- Bump omnibus-software from `39acd5f` to `433a18f` in /omnibus [#2328](https://github.com/chef/chef-dk/pull/2328) ([dependabot-preview[bot]](https://github.com/dependabot-preview[bot]))
+- Bump omnibus from `ac881b7` to `e066879` in /omnibus [#2325](https://github.com/chef/chef-dk/pull/2325) ([dependabot-preview[bot]](https://github.com/dependabot-preview[bot]))
+- Bump omnibus-software from `433a18f` to `a16abe9` in /omnibus [#2339](https://github.com/chef/chef-dk/pull/2339) ([dependabot-preview[bot]](https://github.com/dependabot-preview[bot]))
+- Bump omnibus from `e066879` to `5d95243` in /omnibus [#2347](https://github.com/chef/chef-dk/pull/2347) ([dependabot-preview[bot]](https://github.com/dependabot-preview[bot]))
+- Bump omnibus-software from `a16abe9` to `9068533` in /omnibus [#2346](https://github.com/chef/chef-dk/pull/2346) ([dependabot-preview[bot]](https://github.com/dependabot-preview[bot]))
+- Bump omnibus from `5d95243` to `acdcf27` in /omnibus [#2353](https://github.com/chef/chef-dk/pull/2353) ([dependabot-preview[bot]](https://github.com/dependabot-preview[bot]))
+- Bump omnibus-software from `9068533` to `3f47c11` in /omnibus [#2350](https://github.com/chef/chef-dk/pull/2350) ([dependabot-preview[bot]](https://github.com/dependabot-preview[bot]))
+- Update all DK 3 deps to the latest [#2361](https://github.com/chef/chef-dk/pull/2361) ([tas50](https://github.com/tas50))
+- Update Chef Infra Client to 14.14.29 [#2368](https://github.com/chef/chef-dk/pull/2368) ([tas50](https://github.com/tas50))
+<!-- latest_stable_release -->
+
+## [v3.12.0](https://github.com/chef/chef-dk/tree/v3.12.0) (2019-10-18)
+
+#### Merged Pull Requests
+- Update Ruby in the hab plan to 2.5.5 [#2118](https://github.com/chef/chef-dk/pull/2118) ([tas50](https://github.com/tas50))
+- Update mixlib-archive, mixlib-cli, chefspec, and rspec [#2154](https://github.com/chef/chef-dk/pull/2154) ([tas50](https://github.com/tas50))
+- Fix the build arguments in the Dockerfile [#2229](https://github.com/chef/chef-dk/pull/2229) ([tduffield](https://github.com/tduffield))
+- Jsinha/migrate appvy dk3 [#2272](https://github.com/chef/chef-dk/pull/2272) ([jaymalasinha](https://github.com/jaymalasinha))
+- Update Ruby / openSSL / nokogiri to address CVEs [#2268](https://github.com/chef/chef-dk/pull/2268) ([tas50](https://github.com/tas50))
+- Backport non-breaking changes from DK 4 [#2273](https://github.com/chef/chef-dk/pull/2273) ([tas50](https://github.com/tas50))
+- Update deps to the latest and disable hab package promotion [#2275](https://github.com/chef/chef-dk/pull/2275) ([tas50](https://github.com/tas50))
+- Fix Habitat build failure [#2278](https://github.com/chef/chef-dk/pull/2278) ([tyler-ball](https://github.com/tyler-ball))
+- Update openssl to 1.0.2t [#2287](https://github.com/chef/chef-dk/pull/2287) ([tas50](https://github.com/tas50))
+- Update Chef Client to 14.14.14 and rspec to 3.9.0 [#2288](https://github.com/chef/chef-dk/pull/2288) ([tas50](https://github.com/tas50))
+- Update chef to 14.14.25 [#2299](https://github.com/chef/chef-dk/pull/2299) ([tas50](https://github.com/tas50))
+- A few last minute changes + ChefDK 3.12 release notes [#2307](https://github.com/chef/chef-dk/pull/2307) ([tas50](https://github.com/tas50))
+
 ## [v3.11.3](https://github.com/chef/chef-dk/tree/v3.11.3) (2019-05-31)
 
 #### Merged Pull Requests
@@ -23,7 +56,6 @@
 - Update kitchen-dokken to 2.7 [#2112](https://github.com/chef/chef-dk/pull/2112) ([tas50](https://github.com/tas50))
 - Update Chef to 14.13.11 [#2116](https://github.com/chef/chef-dk/pull/2116) ([tas50](https://github.com/tas50))
 - Update Test Kitchen to 1.25 [#2117](https://github.com/chef/chef-dk/pull/2117) ([tas50](https://github.com/tas50))
-<!-- latest_stable_release -->
 
 ## [v3.10.1](https://github.com/chef/chef-dk/tree/v3.10.1) (2019-05-17)
 

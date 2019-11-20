@@ -47,8 +47,8 @@ end
 # We should only be using "~>" to work around bugs, or temporarily pinning some tech debt.
 # We equality pin the chef gem itself to assert which version we're shipping.
 group(:omnibus_package) do
-  gem "appbundler", ">= 0.12"
-  gem "berkshelf", ">= 7.0.5"
+  gem "appbundler", "< 0.13"
+  gem "berkshelf", ">= 7.0.8"
   gem "chef-provisioning", ">= 2.7.1", group: :provisioning
   gem "chef-provisioning-aws", ">= 3.0.2", group: :provisioning
   gem "chef-provisioning-fog", ">= 0.26.1", group: :provisioning
@@ -57,7 +57,7 @@ group(:omnibus_package) do
   # gems to Rubygems now, so letting this float on latest should always give us the latest
   # stable release. May have to re-pin around major version bumping time, or during patch
   # fixes.
-  gem "chef", "= 14.13.11"
+  gem "chef", "= 14.14.29"
   gem "cheffish", ">= 14.0.1"
   gem "chefspec", "< 7.3.0", source: "https://packagecloud.io/osuosl/chefspec"
   gem "fauxhai-ng", "~> 7.5" # bump this on the next DK major release
@@ -68,15 +68,15 @@ group(:omnibus_package) do
   gem "kitchen-dokken", ">= 2.6.7"
   gem "kitchen-google", ">= 2.0.0"
   gem "kitchen-hyperv", ">= 0.5.1"
-  gem "kitchen-inspec", ">= 1.0"
-  gem "kitchen-vagrant", ">= 1.4"
+  gem "kitchen-inspec", ">= 1.0", "< 1.2.0" # 1.2 starts warning on attributes vs. inputs
+  gem "kitchen-vagrant", ">= 1.6"
   gem "knife-acl", ">= 1.0.3"
   gem "knife-ec2", "< 1.0"
   gem "knife-google", ">= 3.3.3"
   gem "knife-tidy", ">= 1.2.0"
   gem "knife-windows", "<= 3.0.2"
   gem "knife-opc", ">= 0.4.0"
-  gem "knife-vsphere", ">= 2.1.1"
+  gem "knife-vsphere", ">= 3.0.1", "< 4.0"
   gem "mixlib-archive", ">= 0.4.16"
   gem "ohai", "~> 14.0"
   gem "net-ssh", ">= 4.2.0"
@@ -93,7 +93,7 @@ group(:omnibus_package) do
   gem "chef-sugar"
   gem "mixlib-versioning"
   gem "artifactory"
-  gem "opscode-pushy-client", ">= 2.4.11"
+  gem "opscode-pushy-client", ">= 2.99"
   gem "ffi-rzmq-core"
   gem "knife-push"
 
@@ -105,7 +105,6 @@ group(:omnibus_package) do
   gem "pry-remote"
   gem "pry-stack_explorer"
   gem "rb-readline"
-  gem "rubocop"
   gem "winrm-fs"
   gem "winrm-elevated"
   gem "cucumber"
@@ -131,18 +130,16 @@ group(:ruby_prof) do
   gem "ruby-prof"
 end
 
-# Everything except AIX and Windows
+# Everything except Windows
 group(:ruby_shadow) do
   gem "ruby-shadow", platform: :ruby
 end
 
 gem "chefstyle", group: :test
 
-# TODO delete this when we figure out how to include the pushy windows dependencies
-# correctly
+# Ensure support for push-client on Windows
 platforms :mswin, :mingw do
   gem "rdp-ruby-wmi"
-  gem "windows-api"
   gem "windows-pr"
   gem "win32-api"
   gem "win32-dir"
