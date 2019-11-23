@@ -507,6 +507,8 @@ GEM
     kitchen-vagrant (1.6.0)
       test-kitchen (>= 1.4, < 3)
     knife-acl (1.0.3)
+    knife-backup (0.0.12)
+      chef (>= 0.10.10)
     knife-cloud (1.2.3)
       excon (>= 0.50)
       knife-windows (>= 1.0)
@@ -947,6 +949,7 @@ DEPENDENCIES
   kitchen-terraform (> 3.0)
   kitchen-vagrant (>= 1.6)
   knife-acl (>= 1.0.3)
+  knife-backup
   knife-ec2 (< 1.0)
   knife-file!
   knife-google (>= 3.3.3)
